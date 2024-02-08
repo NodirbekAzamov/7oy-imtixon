@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import AxiosClent from '../../plugins/AxiosClent'
-import Menu from '../book/Menu'
+import Menu from '../../SideBar/Menu'
 
 export default function Single_Author() {
   const [data, setData] = useState([])
@@ -18,7 +18,6 @@ export default function Single_Author() {
   }, [])
   return (
     <div className='flex  w-[100%]  h-[100vh]'>
-      <Menu />
       <div className=' flex justify-center items-center w-[100%] ml-[250px] '>
         <div style={{ boxShadow: '10px 14px 16px 15px rgba(255, 255, 255)' }} className='flex gap-[50px] p-[20px] bg-slate-700 justify-center items-center' >
           <div>
